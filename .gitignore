@@ -1,0 +1,47 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Configuration files
+config/*.txt
+!config/default_simulation_config.txt
+# Logs and results
+*.log
+results/
+*.csv
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.lock
+
+# Matplotlib cache
+.matplotlib/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Sphinx build output
+docs/build/
+
+# Other
+*.sqlite3

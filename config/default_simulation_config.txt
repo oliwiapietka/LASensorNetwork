@@ -1,0 +1,217 @@
+[General]
+area_width = 100
+area_height = 100
+max_rounds = 2500
+sink_id = 0
+random_seed = 42
+logging_interval = 10
+
+[NetworkLogic]
+target_k_coverage = 1
+reward_method = reward_method
+cover_set_working_time_slice = 0.1
+end_condition = all_sensors_dead
+
+[SensorDefaults]
+initial_energy = 20.0
+comm_range = 50
+sensing_range = 20
+la_param_a = 0.05
+
+[Sensors]
+count = 50
+
+sensor_0_id = 0
+sensor_0_x = 50
+sensor_0_y = 100
+sensor_0_initial_energy = 9999
+sensor_0_comm_range = 50
+sensor_0_sensing_range = 0
+
+sensor_1_id = 1
+sensor_1_x = 13
+sensor_1_y = 24
+sensor_1_initial_energy = 6.0
+
+sensor_2_id = 2
+sensor_2_x = 84
+sensor_2_y = 33
+sensor_2_initial_energy = 6.0
+
+sensor_3_id = 3
+sensor_3_x = 45
+sensor_3_y = 80
+sensor_3_initial_energy = 6.0
+
+sensor_4_id = 4
+sensor_4_x = 70
+sensor_4_y = 55
+sensor_4_initial_energy = 6.0
+
+sensor_5_id = 5
+sensor_5_x = 90
+sensor_5_y = 20
+sensor_5_initial_energy = 6.0
+
+sensor_6_id = 6
+sensor_6_x = 33
+sensor_6_y = 76
+sensor_6_initial_energy = 6.0
+
+sensor_7_id = 7
+sensor_7_x = 56
+sensor_7_y = 10
+sensor_7_initial_energy = 6.0
+
+sensor_8_id = 8
+sensor_8_x = 20
+sensor_8_y = 50
+sensor_8_initial_energy = 6.0
+
+sensor_9_id = 9
+sensor_9_x = 60
+sensor_9_y = 65
+sensor_9_initial_energy = 6.0
+
+sensor_10_id = 10
+sensor_10_x = 75
+sensor_10_y = 75
+sensor_10_initial_energy = 6.0
+
+sensor_11_id = 11
+sensor_11_x = 25
+sensor_11_y = 30
+sensor_11_initial_energy = 6.0
+
+sensor_12_id = 12
+sensor_12_x = 33
+sensor_12_y = 55
+sensor_12_initial_energy = 6.0
+
+sensor_13_id = 13
+sensor_13_x = 40
+sensor_13_y = 90
+sensor_13_initial_energy = 6.0
+
+sensor_14_id = 14
+sensor_14_x = 55
+sensor_14_y = 40
+sensor_14_initial_energy = 6.0
+
+sensor_15_id = 15
+sensor_15_x = 65
+sensor_15_y = 15
+sensor_15_initial_energy = 6.0
+
+sensor_16_id = 16
+sensor_16_x = 30
+sensor_16_y = 20
+sensor_16_initial_energy = 6.0
+
+sensor_17_id = 17
+sensor_17_x = 90
+sensor_17_y = 90
+sensor_17_initial_energy = 6.0
+
+sensor_18_id = 18
+sensor_18_x = 15
+sensor_18_y = 85
+sensor_18_initial_energy = 6.0
+
+sensor_19_id = 19
+sensor_19_x = 10
+sensor_19_y = 60
+sensor_19_initial_energy = 6.0
+
+sensor_20_id = 20
+sensor_20_x = 35
+sensor_20_y = 35
+sensor_20_initial_energy = 6.0
+
+sensor_21_id = 21
+sensor_21_x = 50
+sensor_21_y = 25
+sensor_21_initial_energy = 6.0
+
+sensor_22_id = 22
+sensor_22_x = 80
+sensor_22_y = 10
+sensor_22_initial_energy = 6.0
+
+sensor_23_id = 23
+sensor_23_x = 60
+sensor_23_y = 90
+sensor_23_initial_energy = 6.0
+
+sensor_24_id = 24
+sensor_24_x = 5
+sensor_24_y = 40
+sensor_24_initial_energy = 6.0
+
+sensor_25_id = 25
+sensor_25_x = 95
+sensor_25_y = 70
+sensor_25_initial_energy = 6.0
+
+sensor_26_id = 26
+sensor_26_x = 85
+sensor_26_y = 45
+sensor_26_initial_energy = 6.0
+
+sensor_27_id = 27
+sensor_27_x = 45
+sensor_27_y = 15
+sensor_27_initial_energy = 6.0
+
+sensor_28_id = 28
+sensor_28_x = 10
+sensor_28_y = 10
+sensor_28_initial_energy = 6.0
+
+sensor_29_id = 29
+sensor_29_x = 70
+sensor_29_y = 30
+sensor_29_initial_energy = 6.0
+
+
+[POIs]
+count = 8
+
+poi_0_id = 0
+poi_0_x = 10
+poi_0_y = 10
+poi_0_critical_level = 2
+
+poi_1_id = 1
+poi_1_x = 90
+poi_1_y = 10
+poi_1_critical_level = 2
+
+poi_2_id = 2
+poi_2_x = 50
+poi_2_y = 50
+poi_2_critical_level = 2
+
+[Communication]
+packet_loss_probability = 0.05
+transmission_delay_per_hop = 0.1
+max_queue_size = 10
+poi_broadcast_interval = 5
+
+[Faults]
+sensor_failure_rate_per_round = 0.0
+
+[Visualization]
+enabled = True
+plot_interval = 10
+show_ranges = True
+show_paths = True
+
+[DeploymentOptimizer]
+enabled = True
+population_size = 20
+generations = 80
+mutation_rate = 0.1
+crossover_rate = 0.7
+tournament_size = 3
+elitism_count = 1
